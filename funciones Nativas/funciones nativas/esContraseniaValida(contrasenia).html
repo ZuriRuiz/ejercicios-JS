@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <h1>esContraseniaValida(contrasenia)</h1>
+        Crear una función esValida que tome como argumento una contrasenia (string) 
+        y devuelva true si tiene 8 caracteres o más o false si tienen menos de 8 caracteres
+    </p>
+
+    <script>
+        const esValida = (contrasenia) =>{
+            if(contrasenia.length >= 8){
+                return true;
+            }else{
+                return false;
+            }
+        }
+
+        console.log(esValida('contraseniaMuySegura')); // true
+        console.log(esValida('abc123')); // false
+    </script>
+</body>
+</html>

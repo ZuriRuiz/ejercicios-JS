@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Datos personales
+
+        Crear un programa que pida al usuario ingresar, por separado, nombre, apellido, edad, nacionalidad, documento, 
+        y muestre luego un mensaje que diga: "Nuevo usuario agregado al sistema:" y liste todos los datos juntos.
+    </p>
+
+    <script>
+        let nombre = prompt('ingrese su nombre');
+        let apellido = prompt('ingrese su apellido');
+        let edad = prompt('ingrese su edad');
+        let nacionalidad = prompt('ingrese su nacionalidad');
+        let documento = prompt('ingrese su documento');
+        let mensaje = `Nuevo usuario agregado al sistema: ${nombre} ${apellido}, ${edad}, ${nacionalidad}, ${documento}`;
+
+        alert(mensaje);
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <h1>obtenerGeneracion(anioNacimiento)</h1>
+        Crear una función obtenerGeneracion que tome como argumento un número anioNacimiento 
+        y devuelva un string con la generación a la que pertenece, siguientdo estas reglas:
+
+        Generación  Año de Nacimiento
+        
+        Baby boomer	    1949-1968
+        Generación X	1969-1980
+        Millennials	    1981-1993
+        Generación Z	1994-2010
+
+    </p>
+
+    <script>
+        const obtenerGeneracion = (anioNacimiento) => {
+            if (anioNacimiento >= 1949 && anioNacimiento <= 1968){
+                return 'Usted pertenece a la generacion Baby Boomer'
+            }else if(anioNacimiento >= 1969 && anioNacimiento <= 1980){
+                return 'Usted pertenece a la genracion Generacion X'
+            }else if( anioNacimiento >= 1981 && anioNacimiento <= 1993){
+                return 'Usted pertenece a la generacion Millenials'
+            }else if(anioNacimiento >= 1994 && anioNacimiento <= 2010){
+                return 'Usted pertenece a la generacion Generacion Z'
+            }
+        }
+
+        console.log(obtenerGeneracion('1968')); // Baby Boomer
+        console.log(obtenerGeneracion('1980')); // Generacion X
+        console.log(obtenerGeneracion('1993')); // Millenials
+        console.log(obtenerGeneracion('2010')); // Generacion Z
+       
+
+    </script>
+</body>
+</html>

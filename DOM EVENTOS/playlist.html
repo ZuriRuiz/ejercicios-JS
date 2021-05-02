@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li id="cancion1"></li>
+        <li id="cancion2"></li>
+        <li id="cancion3"></li>
+        <li id="cancion4"></li>
+        <li id="cancion5"></li>
+    </ul>
+    
+    <script>
+        /*
+            playlist
+        Crear un documento html con un título que diga Mis canciones favoritas y una lista desordenada. 
+        Pedir mediante prompts por cinco canciones (una a la vez), y agregar esas canciones como ítems de la lista desordenada
+        
+        */
+
+        const cancion1 = document.querySelector("#cancion1");
+        const cancion2 = document.querySelector("#cancion2");
+        const cancion3 = document.querySelector("#cancion3");
+        const cancion4 = document.querySelector("#cancion4");
+        const cancion5 = document.querySelector("#cancion5");
+
+        const eleccion1 = prompt("ingrese cancion 1");
+        const eleccion2 = prompt("ingrese cancion 2");
+        const eleccion3 = prompt("ingrese cancion 3");
+        const eleccion4 = prompt("ingrese cancion 4");
+        const eleccion5 = prompt("ingrese cancion 5");
+
+        cancion1.textContent = eleccion1;
+        cancion2.textContent = eleccion2;
+        cancion3.textContent = eleccion3;
+        cancion4.textContent = eleccion4;
+        cancion5.textContent = eleccion5;
+        
+        
+    </script>
+</body>
+</html>

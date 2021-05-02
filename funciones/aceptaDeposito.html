@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <h1>aceptaDeposito(monto)o</h1>
+        Crear una función aceptaDeposito que tome como argumento un número monto 
+        y devuelva true si el monto es divisible por 10 o false si no lo es
+    </p>
+    <script>
+        const aceptaDeposito = (numeroMonto) =>{
+            if (numeroMonto / 10 == 0){
+                return true;
+            }else{
+                return false;
+            }
+        };
+        console.log(aceptaDeposito(440)); // true
+        console.log(aceptaDeposito(123)); // false
+        console.log(aceptaDeposito(500.5)); // false
+        console.log(aceptaDeposito(1000)); // true
+    </script>
+</body>
+</html>

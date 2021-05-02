@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <h1>ocultarContrasenia(contrasenia)</h1>
+        Crear una función ocultarContraseña que tome como argumento una contrasenia de solo numeros 
+        y devuelva un string con dicha contraseña ocultada con astericos *, 
+        es decir, un string con la misma longitud donde todos sus caracteres son astericos
+    </p>
+
+    <script>
+         
+         /*
+         const ocultarContrasenia = (contrasenia) =>{
+            contrasenia.toString().replaceAll('0', '*')
+            contrasenia.toString().replaceAll('1', '*')
+            contrasenia.toString().replaceAll('2', '*')
+            contrasenia.toString().replaceAll('3', '*')
+            contrasenia.toString().replaceAll('4', '*')
+            contrasenia.toString().replaceAll('5', '*')
+            contrasenia.toString().replaceAll('6', '*')
+            contrasenia.toString().replaceAll('7', '*')
+            contrasenia.toString().replaceAll('8', '*')
+            contrasenia.toString().replaceAll('9', '*')
+            
+        }
+        console.log(ocultarContrasenia(123456)); // '******'
+        console.log(ocultarContrasenia(111222333)); // '*********'
+         */ 
+
+         const ocultarContrasenia = (contrasenia) =>{
+            return contrasenia.toString().replace(/[0-9]/g,"*")
+        }
+        console.log(ocultarContrasenia(123456)); // '******'
+        console.log(ocultarContrasenia(111222333)); // '*********'
+    
+    </script>
+</body>
+</html>

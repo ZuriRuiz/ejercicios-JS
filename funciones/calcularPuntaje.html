@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <h1>calcularPuntaje(facil, normal, dificil)</h1>
+        Crear una función calcularPuntaje que calcule el puntaje de un examen que consiste en ejercicios de distinto nivel. 
+        Debe tomar como argumento tres que consisten en la cantidad de ejercicios resueltos en cada nivel 
+        y devolver un número con el puntaje correspondiente. El puntaje se calcula de la siguiente forma:
+
+        facil: 3 puntos
+        normal: 5 puntos
+        dificil: 10 puntos
+    </p>
+
+    <script>
+        const calcularPuntaje = (cantidadFacil, cantidadNormal, cantidadDificil) =>{
+            const ejercicioFacil = cantidadFacil * 3;
+            alert(ejercicioFacil);
+            const ejercicioNormal = cantidadNormal * 5;
+            alert(ejercicioNormal);
+            const ejercicioDificil = cantidadDificil * 10;
+            alert(ejercicioDificil);
+
+        };
+
+        calcularPuntaje(3, 0, 0); // 9
+        calcularPuntaje(0, 2, 1); // 20 
+        calcularPuntaje(5, 1, 2); // 40
+
+    </script>
+</body>
+</html>

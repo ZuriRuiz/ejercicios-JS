@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <h1>restarPorcentaje(numero, porcentaje)</h1>
+
+        Crear una función restarPorcentaje que tome como argumentos un número 
+        y un porcentaje y devuelva la resta de dicho número con la de su porcentaje. 
+        Usar la función calcularPorcentaje para obtener el porcentaje a restar
+    </p>
+
+    <script>
+        const restarPorcentaje  = (numero,porcentaje) =>{
+            const resultado = (numero * porcentaje) / 100;
+            const total = resultado - numero;
+            alert(total);
+        }
+
+        restarPorcentaje(100, 15); // 85
+        restarPorcentaje(10, 40); // 6
+        restarPorcentaje(200, 10); // 180
+    </script>
+</body>
+</html>

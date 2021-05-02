@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <h1>tienenMismaLongitud(a, b)</h1>
+        Crear una función tienenMismaLongitud que tome como argumentos dos strings a y b 
+        y devuelva true si tienen la misma longitud o false de lo contrario
+    </p>
+
+    <script>
+        const tienenMismaLongitud = (a,b) =>{
+            if(a.length == b.length){
+                return true;
+            }else{
+                return false;
+            }
+        }
+
+        console.log(tienenMismaLongitud('javascript', 'java')); // false
+        console.log(tienenMismaLongitud('manzana', 'cerveza')); // true
+    </script>
+</body>
+</html>

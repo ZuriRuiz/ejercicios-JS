@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Calculador gastos
+
+        Crear un programa que pida al usuario cuanto dinero disponible tiene, 
+        y vaya preguntando cuánto tiene que pagar por cada servicio, 
+        pidiendo el nombre del servicio y el monto a pagar, uno a la vez. 
+        Cada vez que pide ingresar un nuevo servicio, el mensaje debe mostrar cuántos servicios quedan por ingresar, 
+        utilizando una variable, y mostrar cuánto dinero disponible queda. 
+        Al final debe mostrar una lista con todos los servicios a pagar y el monto de cada uno, 
+        además del dinero disponible que le queda. 
+        Hacerlo con 3 servicios.
+    </p>
+
+    <script>
+        let dineroDisponible = prompt('ingrese cuanto dinero disponible tiene:');
+        let servicio1 = prompt('ingrese el monto a pagar por el servicio uno:');
+        let total1 = Number(dineroDisponible - servicio1);
+        let servicioRestante = (`Quedan dos servicios a pagar, dinero actual disponible: ${total1}`);
+        alert(servicioRestante);
+        let servicio2 = prompt('ingrese el monto a pagar por el servicio dos');
+        let total2 = Number(total1 - servicio2);
+        let servicioRestante2 = (`Queda un servicio a pagar, dinero actual disponible: ${total2}`);
+        alert(servicioRestante2);
+        let servicio3 = prompt('ingrese el monto del servicio tres');
+        let total3 = Number(total2 - servicio3);
+        let servicioRestante3 = (`dinero disponible: ${total3}`);
+        alert(servicioRestante3);
+    
+    </script>
+</body>
+</html>

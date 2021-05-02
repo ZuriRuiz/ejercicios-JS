@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <h1>removerVocales(str)</h1>
+        Crear una función espaciarCaracteres que tome como argumento un string str 
+        y devuelva un string con todas sus vocales removidas
+    </p>
+    <script>
+        const removerVocales = (str) =>{
+            return str.replaceAll(/[aeiou]/g, '')
+        }
+        console.log(removerVocales('javascript')); // 'jvscrpt'
+        console.log(removerVocales('ada lovelace')); // 'd lvlc'
+    </script>
+</body>
+</html>

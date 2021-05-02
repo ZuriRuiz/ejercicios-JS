@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <img id= "imagen" src="https://i.pinimg.com/originals/75/5c/87/755c87100e0792b9f3271ae23f21bb6c.jpg">
+    
+    <script>
+        /*
+        
+        Ejercicio de Imagen de la guia de DOM
+
+        Hacer un programa que al iniciarse pregunte mediante un prompt por un tamaño de imagen 
+        (siendo las opciones posibles chica, mediana y grande) 
+        y dependiendo de la opción elegida modifique el tamaño de una imagen (cualquiera) en el documento html. Por ejemplo:
+
+        Opción elegida	Ancho de imagen
+        chica	200px
+        mediana	500px
+        grande	800px
+        
+        */
+
+        const tamanio = prompt('ingrese el tamaño que desea opciones: chica, mediana y grande');
+        const img = document.querySelector('#imagen');
+
+        if(tamanio == 'chica'){
+            img.style = `width: 200px;`
+        }else if(tamanio == 'mediana'){
+            img.style = `width: 500px;`
+        }else if(tamanio == 'grande'){
+            img.style = `width: 800px;`
+        }else{
+            alert('error');
+        }
+        
+    </script>
+</body>
+</html>

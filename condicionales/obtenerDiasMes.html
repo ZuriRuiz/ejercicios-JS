@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <h1>obtenerDiasMes(Mes)</h1>
+        Crear una función obtenerDiasMes que tome como argumento un string mes 
+        y devuelva un número dependiendo de la cantidad de días que tenga ese mes
+    </p>
+
+    <script>
+        const obtenerDiasMes = (mes) => {
+            if (mes == 'enero'){
+                return 'enero tiene 31 dias'
+            }else if(mes == 'febrero'){
+                return 'febrero tiene 29 dias'
+            }else if(mes == 'marzo'){
+                return 'marzo tiene 31 dias'
+            }else if(mes == 'abril'){
+                return 'abril tiene 30 dias'
+            }else if(mes == 'mayo'){
+                return 'mayo tiene 31 dias'
+            }else if(mes == 'junio'){
+                return 'junio tiene 30 dias'
+            }else if(mes == 'julio'){
+                return 'julio tiene 31 dias'
+            }else if(mes == 'agosto'){
+                return 'agosto tiene 31 dias'
+            }else if(mes == 'septiembre'){
+                return 'septiembre tiene 30 dias'
+            }else if(mes == 'octubre'){
+                return 'octubre tiene 31 dias'
+            }else if(mes == 'noviembre'){
+                return 'noviembre tiene 30 dias'
+            }else if(mes == 'diciembre'){
+                return 'diciembre tiene 31 dias'
+            }
+        }
+
+        console.log(obtenerDiasMes("diciembre")); // 31
+        console.log(obtenerDiasMes("febrero"));   // 29
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 100px;
+            width: auto;
+        }
+        .imagenGrande{
+            height: 500px;
+            width: auto;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <img class="imagen1" src="https://www.hola.com/imagenes/estar-bien/20180925130054/consejos-para-cuidar-a-un-gatito-recien-nacido-cs/0-601-526/cuidardgatito-t.jpg" alt="">
+    <img class="imagen2" src="https://www.zooplus.es/magazine/wp-content/uploads/2018/04/fotolia_169457098.jpg" alt="">
+    <img class="imagen3" src="https://www.hogarmania.com/archivos/201204/estrenimiento-gato-bebe2-xl-668x400x80xX.jpg" alt="">
+    <img class="imagen4" src="https://www.eluniversal.com.mx/sites/default/files/2020/10/30/tabby-kitten-1517450_1280.jpg" alt="">
+    
+    <img class="imagenGrande" src="https://static.affinity-petcare.com/advance/cdn/farfuture/7Ld_9VmXj7V6Sc1pEhHTPxsvOtw0OB1P09Qyw19tr4U/drupal-cache:qric6i/sites/default/files/field/image/diarrea_en_gatitos_1.jpg" alt="">
+    <script>
+        /*
+            imagenes
+            Crear un documento html con al menos 4 imágenes chicas (100px de alto) y una imagen grande (500px de alto). 
+            Cuando se clickean las imágenes chicas, 
+            la imagen grande se tiene que actualizar con la misma que la imagen chica clickeada.
+
+
+        */
+
+        const imagen1 = document.querySelector(".imagen1");
+        const imagen2 = document.querySelector(".imagen2");
+        const imagen3 = document.querySelector(".imagen3");
+        const imagen4 = document.querySelector(".imagen4");
+        const imagenGrande = document.querySelector(".imagenGrande");
+
+        const actualizar = (imagen)=>{
+            imagenGrande.src = imagen.src;
+        }
+
+        imagen1.addEventListener("click", ()=>{
+            actualizar(imagen1);
+        });
+
+        imagen2.addEventListener("click", ()=>{
+            actualizar(imagen2);
+        });
+
+        imagen3.addEventListener("click", ()=>{
+            actualizar(imagen3);
+        });
+
+        imagen4.addEventListener("click", ()=>{
+            actualizar(imagen4);
+        });
+
+        
+
+
+
+    </script>
+</body>
+</html>

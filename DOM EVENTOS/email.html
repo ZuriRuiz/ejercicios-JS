@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .correo{
+            
+            color: black;
+            font-weight: bold;
+        }
+
+        .mail-leido{
+            color: gray;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mis Emails</h1>
+    <h2>Bandeja de entrada</h2>
+    <ul>
+        <li class="correo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, repellat</li>
+        <li class="correo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, repellat</li>
+        <li class="correo3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, repellat</li>
+        <li class="correo4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, repellat</li>
+        <li class="correo5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, repellat</li>
+        <li class="correo6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, repellat</li>
+        <li class="correo7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, repellat</li>
+        <li class="correo8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, repellat</li>
+        <li class="correo9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, repellat</li>
+        <li class="correo10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, repellat</li>
+    </ul>
+    
+    <script>
+        /*
+            Crear un documento html que tenga:
+
+            un título h1 que diga: Mis emails
+            un título h2 que diga: Bandeja de entrada
+            una lista desordenada con 10 ítems con lorem ipsum (4 o 5 palabras cada uno, no un párrafo entero)
+            Inicialmente los ítems deben estar en negrita y con color negro. 
+            Cuando se clickea uno de ellos, se debe sacarle la negrita y ponerle un color gris (simulando que el email fue leído)
+        
+        */
+
+        const correo1 = document.querySelector(".correo1");
+        const correo2 = document.querySelector(".correo2");
+        const correo3 = document.querySelector(".correo3");
+        const correo4 = document.querySelector(".correo4");
+        const correo5 = document.querySelector(".correo5");
+        const correo6 = document.querySelector(".correo6");
+        const correo7 = document.querySelector(".correo7");
+        const correo8 = document.querySelector(".correo8");
+        const correo9 = document.querySelector(".correo9");
+        const correo10 = document.querySelector(".correo10");
+
+
+        correo1.addEventListener("click", (event)=>{
+            correo1.className = "mail-leido";
+        })
+
+        correo2.addEventListener("click", (event)=>{
+            correo2.className = "mail-leido";
+        })
+
+        correo3.addEventListener("click", (event)=>{
+            correo3.className = "mail-leido";
+        })
+
+        correo4.addEventListener("click", (event)=>{
+            correo4.className = "mail-leido";
+        })
+
+        correo5.addEventListener("click", (event)=>{
+            correo5.className = "mail-leido";
+        })
+
+        correo6.addEventListener("click", (event)=>{
+            correo6.className = "mail-leido";
+        })
+
+        correo7.addEventListener("click", (event)=>{
+            correo7.className = "mail-leido";
+        })
+
+        correo8.addEventListener("click", (event)=>{
+            correo8.className = "mail-leido";
+        })
+
+        correo9.addEventListener("click", (event)=>{
+            correo9.className = "mail-leido";
+        })
+
+        correo10.addEventListener("click", (event)=>{
+            correo10.className = "mail-leido";
+        })
+        
+    </script>
+</body>
+</html>

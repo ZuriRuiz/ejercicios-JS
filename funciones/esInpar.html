@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <h1>esImpar(numero)</h1>
+        Crear una función esImpar que tome como argumento un número y devuelva true si dicho números es impar o false si no lo es
+
+        TIP: un número es impar si divido por 2 el resto (o módulo) de esa operación no es 0
+    </p>
+
+    <script>
+        const esImpar = (numero) =>{
+            if (numero % 2 == 1){
+                return true;
+            }else{
+                return false;
+            }
+        }
+
+        console.log(esImpar(2)); // false
+        console.log(esImpar(3)); // true
+        console.log(esImpar(5)); // true
+        console.log(esImpar(7)); // true
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Costo estacionamiento
+
+        El dueño de un estacionamiento requiere un diagrama de flujo con el algoritmo que le permita determinar 
+        cuánto debe cobrar por el uso del estacionamiento a sus clientes. Las tarifas que se tienen son las siguientes:
+        Las dos primeras horas a $5.00 c/u.
+        Las siguientes tres a $4.00 c/u.
+        Las cinco siguientes a $3.00 c/u.
+        Después de diez horas el costo por cada una es de dos pesos.
+    </p>
+
+    <script>
+        let hora = prompt('ingrese cuantas horas planea estacionar:');
+        if(hora == 2){
+            let costoEstacionamiento1 = 5 * 2;
+            alert(`su tarifa es ${costoEstacionamiento1}`);
+        }else if (hora == 3){
+            let costoEstacionamiento2 = 3 * 4;
+            alert(`su tarifa es ${costoEstacionamiento2}`);
+        }else if (hora >= 4){
+           let costoEstacionamiento3 = 3 * 5;
+           alert(`su tarifa es ${costoEstacionamiento3}`);
+        }else if(hora >= 10){
+           let costoEstacionamiento4 = 10 * 2;
+           alert(`su tarifa es ${costoEstacionamiento4}`);
+           
+        };
+        
+        
+        
+    </script>
+</body>
+</html>

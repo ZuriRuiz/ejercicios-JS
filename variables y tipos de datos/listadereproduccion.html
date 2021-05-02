@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Lista de reproducción
+
+        Crear un programa que pida al usuario ingresar, por separado, 
+        el nombre de una playlist y el título de tres canciones, y al finalizar se muestre un mensaje que diga, 
+        p. ej.: "Se ha creado la playlist 'Hits de los 80s' con las canciones 'Africa', 'Maniac', 'Final Countdown'".
+    </p>
+
+
+    <script>
+        let playlist = prompt('ingrese el nombre de una playlist');
+        let nombreCancionUno =  prompt('ingresa tu primera cancion favorita de esa playlist');
+        let nombreCancionDos = prompt('ingresa tu segunda cancion favorita de esa playlist');
+        let nombreCancionTres = prompt('ingresa tu tercera cancion favorita de esa playlist');
+        let mensaje = `Se ha creado la playlist "${playlist}" con las canciones "${nombreCancionUno}", "${nombreCancionDos}", "${nombreCancionTres}"`;
+
+        alert(mensaje);
+    
+    </script>
+</body>
+</html>

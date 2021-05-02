@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <h1>sumarPorcentaje(numero, porcentaje)</h1>
+        Crear una función sumarPorcentaje que tome como argumentos un número y un porcentaje 
+        y devuelva la suma de dicho número con la de su porcentaje. 
+        Usar la función calcularPorcentaje para obtener el porcentaje a sumar
+    </p>
+
+    <script>
+        const sumarPorcentaje = (numero,porcentaje) =>{
+            const resultado = (numero * porcentaje) / 100;
+            const total = resultado + numero;
+            alert(total);
+        }
+
+        sumarPorcentaje(100, 15); // 115
+        sumarPorcentaje(10, 50); // 15
+        sumarPorcentaje(200, 10); // 220
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        **Dirección completa**
+    
+        - Crear un programa que pida al usuario ingresar, por separado, la calle, el número, el departamento, el código postal,
+        la ciudad y el país, y muestre un mensaje con toda la dirección completa, 
+        p.ej.: "La dirección que ha ingresado es: Calle Falsa 123 3C, 1414, CABA, Argentina".
+    
+    </p>
+    
+    <script>
+
+        let calle = prompt("ingrese nombre de calle");
+        let numeroCalle = prompt("ingrese el numero de calle");
+        let numeroApartamento = prompt("ingrese numero de departamento");
+        let codigoPostal = prompt("ingrese codigo postal");
+        let ciudad = prompt("ingrese ciudad");
+        let pais = prompt("ingrese pais");
+
+        let mensaje = `la direccion que se ha ingresado es : ${calle}  ${numeroCalle}  ${numeroApartamento}  ${codigoPostal}  ${ciudad}  ${pais}`
+
+        console.log(mensaje);
+    
+    </script>
+
+</body>
+</html>

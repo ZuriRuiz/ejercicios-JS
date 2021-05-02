@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/bca02f9d06.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .fondoB{
+            background-color: white;
+        }
+
+        .fondoN{
+            background-color: black;
+        }
+        
+        .textoB{
+            color: white;
+        }
+
+        .textoN{
+            color: black;
+        }
+
+        button{
+        width: 100px;
+        height: 100px;
+        font-size: 50px;
+        color: grey;
+    }
+        
+    </style>
+</head>
+<body class="fondoN">
+    
+    <h1 class="textoB"></h1>
+    <p class="textoB">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Dolorem voluptates numquam, quis, reprehenderit id nesciunt 
+        culpa vitae reiciendis aspernatur quisquam, 
+        laborum commodi beatae ullam ratione minima quibusdam ducimus necessitatibus voluptas!
+    </p>
+    <button>
+        <i class="fas fa-adjust textoB"></i>
+    </button>
+    <script>
+        /*
+            modo-oscuro
+            Crear un documento html con un título, un párrafo y un bótón con un ícono. 
+            Centrar los elementos, cambiar los tamañas y tipografía del texto y tamaño del ícono. 
+            Hacer que el body ocupe toda la pantalla. Al clickear el botón, debe alternar entre modo oscuro y modo claro:
+
+            modo oscuro: body con color de fondo negro, texto e ícono con color blanco, ícono de sol
+            modo claro: body con color de fondo blanco, texto e ícono con color negro, ícono de luna
+        
+        */
+        const titulo = document.querySelector("h1");
+        const parrafo = document.querySelector("p");
+        const boton = document.querySelector("button");
+        const body = document.querySelector("body");
+        const icono = document.querySelector("i");
+
+        boton.addEventListener("click", ()=>{
+            if(titulo.className === "textoB"){
+                titulo.className = "textoN";
+            }else{
+                titulo.className = "textoB";
+            }
+
+            if(parrafo.className === "textoB"){
+                parrafo.className = "textoN";
+            }else{
+                parrafo.className = "textoB";
+            }
+
+            if(body.className === "fondoB"){
+                body.className = "fondoN";
+
+            }else{
+                body.className = "fondoB";
+            }
+
+            if(icono.className === "fas fa-adjust textoB"){
+                icono.className = ("fas fa-adjust textoN");
+            }else{
+                icono.className = ("fas fa-adjust textoB");
+            }
+        })
+
+    </script>
+</body>
+</html>

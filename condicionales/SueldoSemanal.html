@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Sueldo semanal
+
+        Realizá un algoritmo para determinar el sueldo semanal de un trabajador con base en las horas trabajadas 
+        y el pago por hora, 
+        considerando que después de las 40 horas cada hora se considera como excedente y se paga el doble. 
+        Construí el diagrama de flujo, el pseudocódigo.
+    </p>
+
+    <script>
+        let horasTrabajadas = prompt('ingrese horas trabajadas');
+        let pagoPorHoras = prompt('ingrese pago por horas');
+        let pagoTotal1 = horasTrabajadas * pagoPorHoras;
+        let pagototal2 = pagoTotal1 * 2;
+        if(horasTrabajadas > 40){
+            alert(pagototal2);
+        }else{
+            alert(pagoTotal1);
+        }
+
+    </script>
+</body>
+</html>

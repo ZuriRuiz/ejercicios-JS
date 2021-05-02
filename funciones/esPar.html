@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <h1>esPar(numero)</h1> 
+        Crear una función esPar que tome como argumento un número y devuelva true si dicho números es par o false si no lo es
+
+        TIP: un número es par si divido por 2 el resto (o módulo) de esa operación es 0
+    </p>
+
+    <script>
+        const esPar = (numero) =>{
+            if (numero % 2 == 0){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        console.log(esPar(2)); // true
+        console.log(esPar(3)); // false
+        console.log(esPar(4)); // true
+    </script>
+</body>
+</html>

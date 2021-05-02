@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Segundos a horas, minutos y segundos
+
+        Crear un programa que pida ingresar una cantidad en segundos 
+        y muestre un mensaje con el resultado de la conversión en horas, minutos y segundos 
+        que corresponde a esa cantidad 
+        (p.ej. 3602 segundos = 1 hora 2 segundos). (Usar operador módulo)
+    </p>
+
+    <script>
+        let cantidadSeg = prompt('ingrese cantidad de segundos');
+        let conversion = cantidadSeg * 3600;
+        let mensaje = (`${cantidadSeg} = ${conversion}`);
+        alert(mensaje);
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <h1>haceCalor(temperatura)</h1>
+        Crear una función haceCalor que tome como argumento un número temperatura
+        y devuelva true si hace calor (22 grados o más) o false de lo contrario
+    </p>
+
+    <script>
+        const haceCalor = (temperatura) => {
+            if (temperatura >= 22){
+                return true;
+            }else{
+                return false;
+            }
+        };
+
+        console.log(haceCalor(12)); // false
+        console.log(haceCalor(22)); // true
+        console.log(haceCalor(32)); // true
+
+    </script>
+</body>
+</html>

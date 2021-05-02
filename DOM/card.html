@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+        
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        
+        
+        h1{
+            font-weight: 300;
+            font-size: 25px;
+        }
+
+        img{
+            width: 280px;
+        }
+
+        a{
+            text-decoration: none;
+            color: hotpink;
+            background-color: black;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <h1 id="titulo">la mas crack</h1>
+            <img id = "imagen" src="https://i1.wp.com/ismorbo.com/wp-content/uploads/2020/04/gigi-goode.jpg?fit=1080%2C1346&ssl=1">
+            <a id="articulo" href="https://rupaul.com/">♥</a>
+        </div>
+
+    </div>
+        
+    <script>
+        //Ejercicio Card de la guia de DOM
+
+        /*
+            Hacer un programa que al iniciarse pregunte mediante prompts por
+
+            un título
+            una url de una imagen
+            una url a un artículo
+            Utilizar esos datos para completar en el html una card que tenga
+
+            una imagen, con la url de la imagen ingresada
+            un título, con el texto del título ingresado
+            un link que diga Leer más, con la url al artículo ingresado
+            Dar algunos estilos mínimos a la card:
+
+            centrarla con respecto a la pantalla
+            agregarle un borde
+            agregarle un sombreado
+            cambiarle la tipografía
+            cambiarle los tamaños de fuente
+            cambiarle los colores por defecto
+        
+        */
+
+        const UsuarioTitulo = prompt('ingresa titulo de la card');
+        const UsuarioUrlImagen = prompt('ingrese una url de imagen');
+        const UsuarioUrlArticulo = prompt('ingrese una url de un articulo');
+
+        const titulo = document.querySelector("#titulo");
+        const imagen = document.querySelector("#imagen");
+        const articulo = document.querySelector("#articulo");
+
+        titulo.textContent = UsuarioTitulo;
+        imagen.textContent = UsuarioUrlImagen;
+        articulo.textContent = UsuarioUrlArticulo;
+    
+    
+    </script>
+</body>
+</html>

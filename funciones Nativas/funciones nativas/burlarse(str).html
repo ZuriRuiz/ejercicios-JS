@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <h1>burlarse(str)</h1>
+
+        Crear una función burlarse que tome como argumento un string str 
+        y devuelva el mismo string con todas las vocales reemplazadas por la letra i
+    </p>
+
+    <script>
+        const burlarse = (str) =>{
+            let string = str.replaceAll("o", "i");
+            string = string.replaceAll("a","i");
+            string = string.replaceAll("e","i");
+            string = string.replaceAll("a","i");
+            return string;
+        }
+
+        console.log(burlarse('programar es dificil')); // 'prigimir is dificil')
+    </script>
+</body>
+</html>

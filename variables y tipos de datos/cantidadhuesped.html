@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Cantidad de huéspedes
+
+        Crear un programa que pida al usuario ingresar, de a uno por vez, 
+        cuántas habitaciones tiene un hotel para 2, 3 y 4 personas, 
+        y muestre el máximo de huéspedes que puede albergar.
+    </p>
+
+    <script>
+        let habitaciones2 = prompt('ingrese cuantas habitaciones tiene para dos personas');
+        let habitaciones3 = prompt('ingrese cuantas habitaciones tiene para tres personas');
+        let habitaciones4 = prompt('ingrese cuantas habitaciones tiene para cuatro personas');
+
+        let cantidad2 = habitaciones2 * 2;
+        let cantidad3 = habitaciones3 * 3;
+        let cantidad4 = habitaciones4 * 4;
+
+        let cantidadHuespedes = (cantidad2 + cantidad3 + cantidad4);
+        let mensaje = (`Cantidad de Huespedes que puede albergar: ${cantidadHuespedes}`);
+        alert(mensaje);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .accion{
+            display: none;
+            margin-top: 20px;
+        }
+        .comedia{
+            display: none;
+            margin-top: 20px;
+        }
+        .romanticas{
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+   <button class="botonAccion">Accion</button>
+   <button class="botonComedia">Comedia</button>
+   <button class="botonRomanticas">Romanticas</button>
+   <button class="botonTodas">Todas</button>
+   
+   <div class="accion">
+       <img src="https://es.web.img3.acsta.net/medias/nmedia/18/67/73/71/19802298.jpg" alt="">
+       <img src="https://i.blogs.es/860ab9/t2f1/450_1000.jpg" alt="">
+       <img src="https://alonsoramirezcoverblog.files.wordpress.com/2019/08/robocop.jpg" alt="">
+       <img src="https://pics.filmaffinity.com/Mad_Max_Furia_en_la_carretera-171270143-large.jpg" alt="">
+   </div>
+   
+   <div class="comedia">
+        <img src="https://pics.filmaffinity.com/S_per_empollonas-866115897-large.jpg" alt="">
+        <img src="https://i.blogs.es/7a43ba/loco-por-ella/1366_2000.jpeg" alt="">
+        <img src="https://www.lavanguardia.com/files/og_thumbnail/uploads/2019/01/14/5fa51af6f2164.jpeg" alt="">
+        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mamma-mia-2-1513848585.jpeg" alt="">
+    </div>
+
+    <div class="romanticas">
+        <img src="https://pics.filmaffinity.com/See_You_Soon-879322897-mmed.jpg" alt="">
+        <img src="https://mx.web.img3.acsta.net/pictures/19/08/19/08/27/0450201.jpg" alt="">
+        <img src="https://i.ytimg.com/vi/-xvlFoLw1Rk/maxresdefault.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/M/MV5BZTdiZjAyNTMtZjM2MC00MmNjLWJhYTMtNDg0MGY1MDI0Y2FiXkEyXkFqcGdeQXVyODY3Nzc0OTk@._V1_.jpg" alt="">
+    </div>
+   
+   
+   <script>
+        /*
+            peliculas
+            Crear un documento html con 12 imágenes de posters de películas. 
+            Buscar imágenes de películas de 3 géneros (acción, aventura, ciencia ficción, comedia, etc), 
+            4 películas por género. Agregar al documento un botón por cada género, 
+            y un botón que diga Todas. 
+            Cuando se clickea el botón de un género, se tienen que mostrar sólo las películas correspondientes a ese género. 
+            Cuando se clickea el botón Todas se tienen que mostrar todas las películas.
+        
+        */
+        
+        const accion = document.querySelector(".accion");
+        const comedia = document.querySelector(".comedia");
+        const romanticas = document.querySelector(".romanticas");
+        const botonAccion = document.querySelector(".botonAccion");
+        const botonComedia = document.querySelector(".botonComedia");
+        const botonRomanticas = document.querySelector(".botonRomanticas");
+        const botonTodas = document.querySelector(".botonTodas");
+
+        botonAccion.addEventListener("click", ()=>{
+            accion.style ="display:block;"
+            comedia.style ="display:none;"
+            romanticas.style ="display:none;"
+        })
+
+        botonComedia.addEventListener("click", ()=>{
+            comedia.style ="display:block;"
+            accion.style ="display:none;"
+            romanticas.style ="display:none;"
+        })
+
+        botonRomanticas.addEventListener("click", ()=>{
+            romanticas.style ="display:block;"
+            accion.style ="display:none;"
+            comedia.style ="display:none;"
+        })
+
+        botonTodas.addEventListener("click", ()=>{
+            accion.style ="display:block;"
+            comedia.style ="display:block;"
+            romanticas.style ="display:block;"
+        })
+    </script>
+    
+</body>
+</html>

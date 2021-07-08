@@ -14,10 +14,10 @@
     </p>   
     <script>
         const esParOImpar = (numero) =>{
-            if (numero / 2){
-                return true;
+            if ((numero % 2) == 0){
+                return "par";
             }else{
-                return false;
+                return "impar";
             }
         }
 
